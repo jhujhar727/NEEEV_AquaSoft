@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aqua Soft — Project by Jhujhar Singh</title>
+  <meta name="description" content="A school project: Aqua Soft — a tap-mounted water softener by Jhujhar Singh (Roll No. 44).">
+  <style>
+    :root{
+      --accent:#1e90ff;
+      --muted:#6b7280;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{font-size:1.6rem;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px;align-items:center}
+    @media(min-width:760px){.hero{grid-template-columns:1fr 420px}}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+
+    .cta-row{display:flex;gap:12px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #e6eefc;color:var(--accent)}
+
+    /* sections */
+    section{margin-top:20px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:760px){.grid-cols-2{grid-template-columns:1fr 1fr}}
+
+    ul.features{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    ul.features li{background:#fbfdff;padding:10px;border-radius:8px;border:1px solid #eef6ff}
+
+    footer{margin-top:30px;padding-top:20px;border-top:1px solid #eef2ff;color:var(--muted);font-size:0.95rem}
+
+    .small{font-size:0.92rem;color:var(--muted)}
+
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef6ff;color:var(--accent);font-weight:600}
+    .meta{font-size:0.9rem;color:var(--muted)}
+
+    /* code-like area for How I made it */
+    .placeholder{background:#0f172a;color:#e6f0ff;padding:12px;border-radius:8px;font-family:monospace}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <h1>Aqua Soft</h1>
+          <p class="lead">Tap-mounted water softener — school project by <strong>Jhujhar Singh</strong> (Roll No. 44)</p>
+        </div>
+      </div>
+      <nav class="meta">
+        <span class="badge">Arts Student</span>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <div class="card">
+          <h2 style="margin-top:0">Make daily water gentle & better</h2>
+          <p class="small">Aqua Soft is a simple, affordable tap-mounted device that reduces hardness-causing minerals like calcium and magnesium using natural filter media. It helps with hair fall, dry skin, and makes soap lather better — all without electricity or chemicals.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#product">Learn about Aqua Soft</a>
+            <a class="btn btn-ghost" href="#how">How I made it</a>
+          </div>
+
+          <section style="margin-top:16px">
+            <h3 style="margin:6px 0">About the creator</h3>
+            <p class="small">Hi — I'm <strong>Jhujhar Singh</strong>, an arts student from R.S.B.V Gandhi Nagar. This project is part of my school coursework and shows how creative thinking can solve everyday problems.</p>
+          </section>
+        </div>
+
+        <section id="course" class="card" style="margin-top:14px">
+          <h3 style="margin:6px 0">Course & learning</h3>
+          <p class="small">As an Arts student, I focus on understanding society and designing solutions that help people. This project taught me research skills, simple engineering thinking, and how to present an idea clearly.</p>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:6px 0">Quick facts</h3>
+          <ul style="padding-left:16px;margin:8px 0;color:var(--muted)">
+            <li><strong>Product:</strong> Tap-mounted water softener</li>
+            <li><strong>Use:</strong> Bathing, washing face, daily use</li>
+            <li><strong>Materials:</strong> Natural filter media</li>
+            <li><strong>Install:</strong> No tools required</li>
+          </ul>
+
+          <div style="margin-top:8px">
+            <a class="btn btn-primary" href="#product">See Product</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4 style="margin:6px 0">Contact</h4>
+          <p class="small">Want to know more or give feedback? Use the GitHub repo or contact your teacher — this is a school project page.</p>
+          <p class="small" style="margin-top:8px">Roll No: <strong>44</strong></p>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Product section (1 - 1.5 pages worth of content when printed) -->
+    <section id="product" class="card">
+      <h2 style="margin-top:0">Aqua Soft — Product Details</h2>
+      <p class="small">Aqua Soft is designed to convert <strong>hard water</strong> into <strong>soft water</strong> instantly at the tap. Using natural filter media, the device reduces minerals such as calcium and magnesium that cause dryness, hair fall, and poor soap lathering.</p>
+
+      <div class="grid grid-cols-2" style="margin-top:12px">
+        <div>
+          <h4 style="margin:6px 0">How it works</h4>
+          <ol class="small" style="padding-left:18px;margin:8px 0">
+            <li>Attach Aqua Soft to any household tap — no plumber is needed.</li>
+            <li>When water flows, it passes through safe natural filter media inside the device.</li>
+            <li>The media reduces hardness-causing minerals and balances water for softer feel.</li>
+            <li>Enjoy softer water for bathing, face washing, and daily household use.</li>
+          </ol>
+        </div>
+        <div>
+          <h4 style="margin:6px 0">Benefits</h4>
+          <ul class="features">
+            <li>Reduces hair fall and improves skin softness.</li>
+            <li>Makes soap foam better for cleaner bathing.</li>
+            <li>No electricity, no chemicals — natural filtration.</li>
+            <li>Low cost and easy to install and replace.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4 style="margin:6px 0">Who it helps</h4>
+        <p class="small">Families using borewell or tank water, students in hostels, people with sensitive skin, and anyone who wants improved water quality without expensive systems.</p>
+      </div>
+
+      <div style="margin-top:12px" class="small">
+        <strong>Mission:</strong> To make soft water accessible and affordable for everyone, improving everyday health and comfort.
+      </div>
+    </section>
+
+    <!-- How I made it placeholder -->
+    <section id="how" class="card">
+      <h2 style="margin-top:0">How I Made It</h2>
+      <p class="small">(Write your story here — below are some prompts you can expand into paragraphs.)</p>
+      <div class="placeholder">
+        - Why I chose the idea: noticed hard water problems at home and in my neighbourhood.
+        <br>- Research steps: learned about calcium & magnesium, explored natural filter materials.
+        <br>- Experiments: tested small filter samples and measured results.
+        <br>- Design: created a tap-mounted form that is easy to attach and replace.
+        <br>- Team and roles: planning, budgeting, and presenting the project in school.
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Aqua Soft</strong> — Project by <strong>Jhujhar Singh</strong> (Roll No. 44)
+          <div class="small" style="margin-top:6px">Built for school coursework. Want changes? Edit this HTML file and push to your GitHub repository.</div>
+        </div>
+        <div class="small">Made with care • Simple design • 2025</div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
